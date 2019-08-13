@@ -1,3 +1,18 @@
+/*
+
+   Desarrollado por:
+      - Sofia Verónica Ro
+      - Alejandro Vázquez del Mercado Gutiérrez
+      - Osain Abitia Alvarez
+
+   Descripción:
+      Código que controla el funcionamiento de máquina de refrescos desarrollado en Ardiuno.
+      
+   Fecha:
+      5 de Julio 2019
+
+*/
+
 #include <Servo.h>
 
 Servo myservo;
@@ -45,10 +60,10 @@ int cambio1 = 0;
 
 void moverServoMotor() {
 
-   for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
-    // in steps of 1 degree
-    myservo.write(pos);              // tell servo to go to position in variable 'pos'
-    delay(15);                       // waits 15ms for the servo to reach the position
+   // Girar servomotor por 180º.
+   for (pos = 0; pos <= 180; pos += 1) { 
+      myservo.write(pos);              
+      delay(15);                       
   }
     
   
